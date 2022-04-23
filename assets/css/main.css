@@ -1,17 +1,20 @@
 *
 {
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
+   /*  margin-top: 0px !important;
+    margin-bottom: 0px !important; */
     padding-top: 0px !important;
     padding-bottom: 0px !important;
+
+    
     box-sizing: border-box !important;
-    box-shadow: inset 0px 0px 2px rgba(255, 0, 0, 0.9);
+    /* box-shadow: inset 0px 0px 2px rgba(255, 0, 0, 0.9); */
 }
 
 :root{
     --vermelho:#E50914;
     --preta:#141414;
     --vermelho2:#ff000d;
+    --bg-gradient:#141414;
 }
 
 body{
@@ -24,6 +27,9 @@ body{
     color: var(--vermelho);
     font-family: 'Arial Black', Times;
     font-size:39px; 
+    display: flex; /* DETERMINA O TIPO DE BOX PARA ELEMENTO(S) */
+    flex-direction: row;
+    z-index: 999;
 }
 
 .navbar-brand h1:hover  {
@@ -32,21 +38,160 @@ body{
     font-size:39px;
     transition: .3s ease;  
 }
+
 .nav-link {
     color: rgba(192, 192, 192, 0.739) !important;
-    font-size: .9em;
+    font-size: 1em;
     font-weight: 300;
-    margin-left: 7px;
+    margin-left: 1px;
 }
 
 .nav-link:hover {
-    color: rgba(246, 242, 242, 0.739) !important;
-    font-size: .9em;
+    color:white !important;
+    font-size: 1em;
     font-weight: 300;
-    margin-left: 7px;
+    margin-left: 1px;
     transition: 0.3s ease;
 }
 
+.capa {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100% vw;
+    background-image: var(--bg-gradient);
+    justify-content: center;
+    align-items: flex-start
+}
+
+/* .frase-efeito {
+    font-size: 1em;
+    font-weight: 300;
+    color: rgba(192, 192, 192, 0.947);
+    background-color: #141414;
+    border: solid 1px #141414;
+    border-radius: 80%;
+    color: rgb(166, 23, 23);
+
+} */
+
+.tam {
+    width: auto;
+    height: auto;
+
+}
+
+.logo-puro {
+    color: var(--vermelho); 
+    font-family: 'Arial Black', Times;
+    font-size:63px !important; 
+    cursor: pointer;
+    /* display: flex; 
+    flex-direction: row;
+    z-index: 999;  */
+}
+
+.logo-puro:hover {
+    color: var(--vermelho2); 
+    font-family: 'Arial Black', Times;
+    font-size:63px !important; 
+    cursor: pointer;
+}
+
+.ajuste-ind {
+    font-size: 2.5em;
+    font-weight: 700;    
+}
+
+.maratona {
+    color: #ff000d;
+    font-size: .7em;
+    font-weight: 200;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.maratona1 {
+    color: #ff000d;
+    font-size: 1.1em;
+    font-weight: 200;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.maratona2 {
+    color: #ff000d;
+    font-size: 1.6em;
+    font-weight: 200;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.maratona3 {
+    color: #ff000d;
+    font-size: 2.2em;
+    font-weight: 200;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
 
+.filme {
+    background-repeat: no-repeat !important;
+}
 
+.texto-minis1 {
+    color: blueviolet;
+    font-weight: 700;
+    border: blue 3px solid;
+    border-radius: 50%;
+}
+.par-minis1 {
+    color: blueviolet;
+    font-weight: 700;
+}
+.texto-minis2 {
+    color:aqua;
+    font-weight: 700;
+    border: aquamarine 3px solid;
+    border-radius: 50%;
+}
+.par-minis2 {
+    color:aqua;
+    font-weight: 700;
+}
+
+.texto-minis3 {
+    color:gold;
+    font-weight: 700;
+    border: goldenrod 3px solid;
+    border-radius: 50%;
+}
+.par-minis3 {
+    color:gold;
+    font-weight: 700;
+}
+
+.texto-minis4 {
+    color:red;
+    font-weight: 700;
+    border: crimson 3px solid;
+    border-radius: 50%;
+}
+.par-minis4 {
+    color:red;
+    font-weight: 700;
+}
+
+.texto-minis5 {
+    color:chartreuse;
+    font-weight: 700;
+    border: darkgreen 3px solid;
+    border-radius: 50%;
+}
+.par-minis5 {
+    color:chartreuse;
+    font-weight: 700;
+}
+
+.fundo-elmo {
+    background-color: black;
+}
+.logo-n {
+    background-color: #141414;
+}
